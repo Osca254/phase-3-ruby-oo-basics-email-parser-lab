@@ -11,3 +11,5 @@ class EmailAddressParser
         @email_addresses.split(/, | /).uniq
     end
 end
+email1 = EmailAddressParser.new("john@doe.com, person@somewhere.org")
+email1.parse
